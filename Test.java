@@ -9,9 +9,8 @@ public class Test {
             sf.kaempfen();
             sf.zaubern();
             elfe.rennen();
-        } catch (KeineKraftException e){
+        } catch (KeineKraftException e) {
             System.out.println(e);
         }
-
     }
 }

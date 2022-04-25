@@ -4,6 +4,7 @@ public abstract class Spielfigur {
 
     private String name;
     private int staerkepunkte;
+    private int hp = 100;
 
     public Spielfigur(String name, int staerkepunkte) {
         this.name = name;
@@ -20,6 +21,14 @@ public abstract class Spielfigur {
 
     protected void setStaerkepunkte(int staerkepunkte) {
         this.staerkepunkte = staerkepunkte;
+    }
+
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
     }
 
     public void laufen() throws KeineKraftException {
