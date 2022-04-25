@@ -10,7 +10,7 @@ public class Elfe extends Spielfigur{
         if (getStaerkepunkte() <= 1) {
             throw new KeineKraftException("rennen ", getName());
         } else {
-            System.out.println(getName() + " rennt, zwei Stärkepunkt wird verbraucht");
+            System.out.println(getName() + " rennt, zwei Stärkepunkte wird verbraucht.");
             setStaerkepunkte(getStaerkepunkte() -2);
         }
     }

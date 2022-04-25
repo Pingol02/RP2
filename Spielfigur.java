@@ -26,7 +26,7 @@ public abstract class Spielfigur {
         if (staerkepunkte <= 0) {
             throw new KeineKraftException("läufen ", name);
         } else {
-            System.out.println(name + " läuft, ein Stärkepunkt wird verbraucht");
+            System.out.println(name + " läuft, ein Stärkepunkt wird verbraucht.");
             staerkepunkte--;
         }
     }
@@ -35,7 +35,7 @@ public abstract class Spielfigur {
         if (staerkepunkte <= 1) {
             throw new KeineKraftException("klättern ", name);
         } else {
-            System.out.println(name + " klättert, zwei Stärkepunkt wird verbraucht");
+            System.out.println(name + " klättert, zwei Stärkepunkte wird verbraucht.");
             staerkepunkte -= 2;
         }
     }
@@ -44,7 +44,7 @@ public abstract class Spielfigur {
         if (staerkepunkte <= 2) {
             throw new KeineKraftException("kämpfen ", name);
         } else {
-            System.out.println(name + " kämpft, drei Stärkepunkt wird verbraucht");
+            System.out.println(name + " kämpft, drei Stärkepunkte wird verbraucht.");
             staerkepunkte -= 3;
         }
     }

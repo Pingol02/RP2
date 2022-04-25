@@ -17,7 +17,7 @@ public class Zauberer extends Spielfigur{
         if (zauberpunkte <= 0) {
             throw new KeineKraftException("zauberen ", getName());
         } else {
-            System.out.println(getName() + " zaubert, ein Zauberpunkt wird verbraucht");
+            System.out.println(getName() + " zaubert, ein Zauberpunkte wird verbraucht.");
             zauberpunkte--;
         }
     }
