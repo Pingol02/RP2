@@ -6,7 +6,7 @@ public class KeineKraftException extends Exception{
     private String name;
 
     public KeineKraftException(String aktion, String name) {
-        super(name + " hat keine kraft mehr zu " + aktion);
+        super(name + " hat keine Kraft mehr zu " + aktion);
 
     }
 
